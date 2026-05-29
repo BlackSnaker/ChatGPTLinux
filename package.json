@@ -26,6 +26,7 @@
     "start": "electron .",
     "start:widget": "electron . --widget",
     "pack": "electron-builder --linux dir",
+    "dist:ci": "electron-builder --linux dir && node scripts/archive-linux-unpacked.js",
     "dist": "electron-builder --linux AppImage dir && node scripts/archive-linux-unpacked.js",
     "dist:linux": "electron-builder --linux AppImage dir && node scripts/archive-linux-unpacked.js",
     "install:desktop": "bash scripts/install-desktop.sh"

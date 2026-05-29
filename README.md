@@ -95,7 +95,7 @@ git tag v1.0.0
 git push origin main --tags
 ```
 
-The release workflow uploads AppImage and `linux-unpacked.tar.gz` artifacts for
-tag builds.
+The release workflow uploads `linux-unpacked.tar.gz` artifacts for tag builds.
+Local AppImage builds are still available through `npm run dist:linux`.
 
 The repository metadata points to `BlackSnaker/ChatGPTLinux`.
