@@ -1,0 +1,57 @@
+{
+  "name": "chatgpt-linux",
+  "version": "1.0.0",
+  "description": "Unofficial Electron wrapper for ChatGPT on Linux.",
+  "main": "src/main.js",
+  "private": false,
+  "author": "ChatGPT Linux contributors",
+  "license": "MIT",
+  "homepage": "https://github.com/OWNER/chatgpt-linux#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/chatgpt-linux/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/chatgpt-linux.git"
+  },
+  "keywords": [
+    "chatgpt",
+    "electron",
+    "linux",
+    "desktop",
+    "wrapper"
+  ],
+  "scripts": {
+    "check": "node --check src/main.js",
+    "start": "electron .",
+    "start:widget": "electron . --widget",
+    "pack": "electron-builder --linux dir",
+    "dist": "electron-builder --linux AppImage dir && node scripts/archive-linux-unpacked.js",
+    "dist:linux": "electron-builder --linux AppImage dir && node scripts/archive-linux-unpacked.js",
+    "install:desktop": "bash scripts/install-desktop.sh"
+  },
+  "build": {
+    "appId": "local.chatgpt.linux",
+    "productName": "ChatGPT",
+    "asar": true,
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Network",
+      "icon": "assets/icon.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^41.2.0",
+    "electron-builder": "^26.0.12"
+  }
+}

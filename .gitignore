@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+release/
+*.AppImage
+*.blockmap
+*.tar.gz
+
+# Runtime and local state
+*.log
+*.tmp
+*.sqlite
+*.sqlite-*
+.env
+.env.*
+
+# Editor and OS files
+.~lock.*#
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
