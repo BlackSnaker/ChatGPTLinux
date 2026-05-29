@@ -10,6 +10,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   linux:
     name: Linux build
@@ -24,6 +27,11 @@ jobs:
         with:
           node-version: 22
           cache: npm
+
+      - name: Install Linux packaging dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libfuse2t64
 
       - name: Install dependencies
         run: npm ci --include=dev
