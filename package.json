@@ -6,13 +6,13 @@
   "private": false,
   "author": "ChatGPT Linux contributors",
   "license": "MIT",
-  "homepage": "https://github.com/OWNER/chatgpt-linux#readme",
+  "homepage": "https://github.com/BlackSnaker/ChatGPTLinux#readme",
   "bugs": {
-    "url": "https://github.com/OWNER/chatgpt-linux/issues"
+    "url": "https://github.com/BlackSnaker/ChatGPTLinux/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/chatgpt-linux.git"
+    "url": "git+https://github.com/BlackSnaker/ChatGPTLinux.git"
   },
   "keywords": [
     "chatgpt",

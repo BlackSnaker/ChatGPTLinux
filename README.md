@@ -98,5 +98,4 @@ git push origin main --tags
 The release workflow uploads AppImage and `linux-unpacked.tar.gz` artifacts for
 tag builds.
 
-Before publishing, replace the placeholder `OWNER` in `package.json` with the
-actual GitHub account or organization.
+The repository metadata points to `BlackSnaker/ChatGPTLinux`.
