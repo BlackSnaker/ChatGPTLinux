@@ -1,7 +1,7 @@
 {
   "name": "chatgpt-linux",
   "version": "1.0.0",
-  "description": "Unofficial Electron wrapper for ChatGPT on Linux.",
+  "description": "Unofficial ChatGPT desktop wrapper for Linux with widget mode and Firefox session import.",
   "main": "src/main.js",
   "private": false,
   "author": "ChatGPT Linux contributors",
